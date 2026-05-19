@@ -141,14 +141,6 @@ function navigate(pageId) {
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   document.getElementById('page-'+pageId).classList.add('active');
   document.querySelectorAll('.nav-item[data-page="'+pageId+'"]').forEach(n => n.classList.add('active'));
-  const titles = {
-    dashboard:'Dashboard', market:'Market Sizing', demand:'Demand & Demographics',
-    brands:'Brand Profiles', density:'Provider Density', keywords:'Search Demand',
-    regulation:'Regulatory Landscape', trust:'Trust & Complaints',
-    competitive:'East Midlands Map', opportunities:'Opportunity Matrix',
-    intelligence:'Ongoing Intel System', sources:'Sources & Method'
-  };
-  document.getElementById('crumbs').innerHTML = 'Intelligence Report / <span>'+titles[pageId]+'</span>';
   document.querySelector('.main').scrollTop = 0;
   if (pageId === 'market' && !window._chartDone) renderChart();
   if (pageId === 'density' && !window._densityChartDone) renderDensityChart();
