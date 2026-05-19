@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Clear Aligners · Market Intelligence</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">Treeline · Intelligence</div>
+      <h1>UK Clear Aligners</h1>
+      <div class="meta">Click-through prototype · v1</div>
+    </div>
+
+    <div class="nav-section">
+      <div class="label">Overview</div>
+      <div class="nav-item active" data-page="dashboard">
+        <span class="icon">⌂</span> Dashboard
+      </div>
+      <div class="nav-item" data-page="market">
+        <span class="icon">📈</span> Market Sizing
+      </div>
+      <div class="nav-item" data-page="demand">
+        <span class="icon">👥</span> Demand &amp; Demographics
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="label">Competitive</div>
+      <div class="nav-item" data-page="brands">
+        <span class="icon">★</span> Brand Profiles
+      </div>
+      <div class="nav-item" data-page="density">
+        <span class="icon">⛬</span> Provider Density
+      </div>
+      <div class="nav-item" data-page="keywords">
+        <span class="icon">⌕</span> Search Demand
+      </div>
+      <div class="nav-item" data-page="competitive">
+        <span class="icon">⌖</span> East Midlands Map
+      </div>
+      <div class="nav-item" data-page="trust">
+        <span class="icon">⚠</span> Trust &amp; Complaints
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="label">Strategy</div>
+      <div class="nav-item" data-page="regulation">
+        <span class="icon">§</span> Regulatory Landscape
+      </div>
+      <div class="nav-item" data-page="opportunities">
+        <span class="icon">◆</span> Opportunity Matrix
+      </div>
+      <div class="nav-item" data-page="intelligence">
+        <span class="icon">⟳</span> Ongoing Intel System
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="label">Reference</div>
+      <div class="nav-item" data-page="sources">
+        <span class="icon">≡</span> Sources &amp; Method
+      </div>
+    </div>
+
+    <div class="footer-info">
+      Prepared 19 May 2026<br>
+      Free public sources only
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+    <div class="proto-banner">
+      <b>Prototype</b> — interactive click-through of the full report. All data sourced from free public web. Sample only.
+    </div>
+
+    <div class="topbar">
+      <div class="crumbs" id="crumbs">Intelligence Report / <span>Dashboard</span></div>
+      <div class="actions">
+        <button class="btn" onclick="alert('Would export current view as PDF in production')">⤓ Export PDF</button>
+        <button class="btn primary" onclick="alert('Would open intelligence dashboard in production')">Open Dashboard</button>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- ============ DASHBOARD ============ -->
+      <div class="page active" id="page-dashboard">
+        <div class="hero">
+          <div class="eyebrow">Market Intelligence · UK · 2026</div>
+          <h1>The UK clear aligner market is no longer emerging.</h1>
+          <p>$367.7m category in 2025, forecast 25.7% CAGR through 2033. Treeline is positioned in the East Midlands via the MiSmile Network — but the consumer-chain threat is real, and the share-of-local-search question is now the strategic priority.</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card featured">
+            <div class="label">UK Market Size 2025</div>
+            <div class="value">$367.7m</div>
+            <div class="delta">→ $2.33bn by 2033</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Forecast CAGR</div>
+            <div class="value">25.7%</div>
+            <div class="delta up">2026–2033 (Grand View)</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Adult Revenue Share</div>
+            <div class="value">73.59%</div>
+            <div class="delta">Teens fastest growing</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">UK / Global Share</div>
+            <div class="value">4.4%</div>
+            <div class="delta">Headroom vs. US/EU</div>
+          </div>
+        </div>
+
+        <h3 style="color:var(--navy); margin:18px 0 12px; font-size:16px;">Jump to a section</h3>
+        <div class="quick-nav">
+          <div class="quick-card" onclick="navigate('brands')">
+            <div class="ico">★</div>
+            <h4>5 Brand Profiles</h4>
+            <p>Invisalign, Spark, ClearCorrect, Angel Aligner, Impress — click any for full intelligence card.</p>
+          </div>
+          <div class="quick-card" onclick="navigate('density')">
+            <div class="ico">⛬</div>
+            <h4>Provider Density</h4>
+            <p>8,229 UK Invisalign providers. Sleaford has 7, Lincoln 17, Nottingham 89, Sheffield 90.</p>
+          </div>
+          <div class="quick-card" onclick="navigate('keywords')">
+            <div class="ico">⌕</div>
+            <h4>Search Demand</h4>
+            <p>UK keyword volumes — Invisalign +45% YoY, clear aligners +66%. City-by-city for Treeline.</p>
+          </div>
+          <div class="quick-card" onclick="navigate('competitive')">
+            <div class="ico">⌖</div>
+            <h4>East Midlands Map</h4>
+            <p>Treeline's local competitive set — who offers what across Lincoln, Nottingham, Sheffield.</p>
+          </div>
+          <div class="quick-card" onclick="navigate('opportunities')">
+            <div class="ico">◆</div>
+            <h4>Opportunity Matrix</h4>
+            <p>Six prioritised growth plays scored on effort and time-to-impact. Filterable.</p>
+          </div>
+          <div class="quick-card" onclick="navigate('trust')">
+            <div class="ico">⚠</div>
+            <h4>Trust Landscape</h4>
+            <p>Top complaint themes across the category — the trust gap is exploitable.</p>
+          </div>
+          <div class="quick-card" onclick="navigate('intelligence')">
+            <div class="ico">⟳</div>
+            <h4>Monitoring System</h4>
+            <p>Monthly / quarterly / annual cadence using only free tools. Drop-in plan.</p>
+          </div>
+          <div class="quick-card" onclick="navigate('sources')">
+            <div class="ico">≡</div>
+            <h4>Every Source</h4>
+            <p>Methodology, verified citations, and what this report deliberately did not do.</p>
+          </div>
+        </div>
+
+        <div class="callout info" style="margin-top:24px;">
+          <span class="icon">💡</span>
+          <div>
+            <strong>Key strategic conclusion.</strong> Invisalign owns the demand — Treeline's job is to capture the local Invisalign search query and convert it under Treeline's own clinical brand. Impress is the only true national consumer threat, and they have no East Midlands clinic yet. The window to entrench is now.
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ MARKET ============ -->
+      <div class="page" id="page-market">
+        <div class="page-header">
+          <div class="eyebrow">Section 2</div>
+          <h2>Market Sizing &amp; Growth Forecast</h2>
+          <p class="desc">The UK clear aligner market is at $367.7m in 2025, on track to roughly $2.33bn by 2033. Adults dominate revenue today; teens drive growth.</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card featured">
+            <div class="label">2025</div>
+            <div class="value">$367.7m</div>
+            <div class="delta">Grand View Research estimate</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">2033 Forecast</div>
+            <div class="value">$2.33bn</div>
+            <div class="delta up">≈ 6× growth in 8 years</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">CAGR</div>
+            <div class="value">25.7%</div>
+            <div class="delta">2026–2033</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Adult Share</div>
+            <div class="value">73.59%</div>
+            <div class="delta">Of 2025 UK revenue</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>UK clear aligner market — projected growth</h3>
+          <div class="chart-wrap"><canvas id="growthChart"></canvas></div>
+          <div class="source">Source: Grand View Research — UK Clear Aligners Market Size &amp; Outlook (2025 published estimate, 2026–2033 forecast). All figures USD millions.</div>
+        </div>
+
+        <div class="card">
+          <h3>How published estimates compare</h3>
+          <table class="tbl">
+            <thead><tr><th>Publisher</th><th>Geography</th><th>Headline figure</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr><td>Grand View Research</td><td>UK</td><td>$367.7m (2025) → $2,330.5m (2033)</td><td>CAGR 25.7%</td></tr>
+              <tr><td>Grand View Research (older model)</td><td>UK</td><td>$290.6m (2024) → $1,368m (2030)</td><td>CAGR 30.1% — superseded</td></tr>
+              <tr><td>Mordor Intelligence</td><td>Global</td><td>$4.66bn (2025) → $13.65bn (2031)</td><td>CAGR 19.59%</td></tr>
+              <tr><td>Fortune Business Insights</td><td>Global</td><td>$8.3bn (2024) → $29.9bn (2030)</td><td>CAGR 23.8%</td></tr>
+              <tr><td>Align Technology Q1 2025</td><td>Global cases</td><td>642,300 cases</td><td>+6.2% YoY</td></tr>
+              <tr><td>Angelalign 2024 results</td><td>Global cases</td><td>359,400 cases</td><td>+46.7% YoY — fastest grower</td></tr>
+            </tbody>
+          </table>
+          <div class="source">Sources: grandviewresearch.com, mordorintelligence.com, fortunebusinessinsights.com, orthodonticproductsonline.com, angelaligner.com.</div>
+        </div>
+
+        <div class="callout warning">
+          <span class="icon">⚠️</span>
+          <div>
+            <strong>Read carefully.</strong> Market sizing figures vary by ~30% between publishers because methodologies differ (retail price vs. wholesale, cases shipped vs. revenue). The Grand View Research $367.7m is the most commonly cited UK figure but is an analyst estimate behind a paid report. Direction of travel — strong growth, teen acceleration, adult dominance — is consistent across all sources.
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ DEMAND ============ -->
+      <div class="page" id="page-demand">
+        <div class="page-header">
+          <div class="eyebrow">Section 4</div>
+          <h2>Demand &amp; Demographics</h2>
+          <p class="desc">BOS data confirms the post-pandemic adult demand surge; 2023 protocol updates and Align's Q3 2025 results both flag teens as the next growth wave.</p>
+        </div>
+
+        <div class="card">
+          <h3>British Orthodontic Society — Zoom Boom survey</h3>
+          <div class="stat-grid">
+            <div class="stat-card"><div class="label">Orthodontists seeing more adults</div><div class="value">84%</div></div>
+            <div class="stat-card"><div class="label">Demand above expectation</div><div class="value">60%</div></div>
+            <div class="stat-card"><div class="label">Adults aged 26–55</div><div class="value">88%</div></div>
+            <div class="stat-card"><div class="label">Female adult patients</div><div class="value">80%</div></div>
+          </div>
+          <p style="margin-top:14px;">Drivers cited by orthodontists: 65% heightened awareness of adult orthodontics; 55% rising patient expectations and social factors (notably video-call self-perception).</p>
+          <div class="source">Source: BOS, "The Zoom Boom" survey, March–April 2021 (bos.org.uk). Trend has held in follow-up BDJ commentary.</div>
+        </div>
+
+        <div class="card">
+          <h3>The teen acceleration</h3>
+          <p>Adults still dominate revenue (73.59% in 2025), but the teen segment is now the fastest growing. Two specific signals:</p>
+          <ul style="padding-left:20px; margin-bottom:10px;">
+            <li><b>BOS 2023 protocol update</b> — clear aligners recognised as a valid first-line option for Class I cases in 12–17 year olds, conditional on &gt;20 hours/day wear.</li>
+            <li><b>Align Technology Q3 2025</b> — teen and kids segment specifically called out as the volume growth driver in quarterly results.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Top patient motivations</h3>
+          <p>From BOS and BDJ data, in approximate order of frequency:</p>
+          <ol style="padding-left:22px; margin-top:8px;">
+            <li>Crowding (most common)</li>
+            <li>Aesthetic improvement / self-confidence — amplified by video-call self-perception</li>
+            <li>Spacing</li>
+            <li>Bite correction</li>
+            <li><b>Pre-restorative preparation</b> (implants, veneers, bonding) — the under-exploited cross-sell vector</li>
+          </ol>
+          <div class="callout success" style="margin-top:14px;">
+            <span class="icon">💰</span>
+            <div>
+              <strong>Cross-sell implication.</strong> Patients who present for aligner consultation often have other restorative needs that go unsurfaced. A structured smile journey (alignment → whitening → bonding → veneers → implants → retainers) typically raises lifetime patient value 2–3× vs. aligner-only delivery.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ BRANDS ============ -->
+      <div class="page" id="page-brands">
+        <div class="page-header">
+          <div class="eyebrow">Section 5</div>
+          <h2>Brand Profiles</h2>
+          <p class="desc">Five brands shaping the UK clear aligner market. Click any card for the full intelligence drawer with positioning, treatment model, pricing, trust signals, and strategic read.</p>
+        </div>
+
+        <div class="brand-grid" id="brandGrid"></div>
+      </div>
+
+      <!-- ============ PROVIDER DENSITY ============ -->
+      <div class="page" id="page-density">
+        <div class="page-header">
+          <div class="eyebrow">New · Section 5.5</div>
+          <h2>Provider Density Map</h2>
+          <p class="desc">UK-wide Invisalign provider counts by city, with Treeline catchments highlighted. Data: alignerlocal.co.uk public directory (8,229 total UK providers across 591 cities).</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card featured">
+            <div class="label">Total UK Providers</div>
+            <div class="value">8,229</div>
+            <div class="delta">Across 591 cities</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">East Midlands region</div>
+            <div class="value">East Mids</div>
+            <div class="delta">5 of Treeline's catchments</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Treeline locations</div>
+            <div class="value">4 cities</div>
+            <div class="delta">Lincoln · Notts · Sheffield · Sleaford</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Strongest local position</div>
+            <div class="value">Sleaford</div>
+            <div class="delta up">Only 7 providers in city</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Treeline catchments — competitive density</h3>
+          <div id="densityList"></div>
+          <div class="source">Source: alignerlocal.co.uk public Invisalign provider directory (accessed 19 May 2026). Note: "providers" includes any GDC-registered clinic offering Invisalign — quality and tier (Bronze→Diamond) varies widely.</div>
+        </div>
+
+        <div class="card">
+          <h3>East Midlands region — full picture</h3>
+          <div class="chart-wrap" style="height:280px;"><canvas id="densityChart"></canvas></div>
+          <div class="source">East Midlands region overview. Treeline operates in Lincoln, Nottingham and Sleaford catchments; Sheffield is Yorkshire region (shown for comparison given Treeline's Sheffield clinic).</div>
+        </div>
+
+        <div class="callout info">
+          <span class="icon">📍</span>
+          <div>
+            <strong>Strategic read.</strong> Sleaford (7 providers) and Lincoln (17) are Treeline's strongest competitive positions — both materially under-served vs. Nottingham (89) and Sheffield (90). The marketing implication: <em>defend Sleaford and Lincoln hard</em>, and pursue Nottingham/Sheffield with brand and SEO differentiation rather than volume tactics. Sleaford in particular should be treated as a near-monopoly opportunity at the current density.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>National comparison set</h3>
+          <table class="tbl">
+            <thead><tr><th>City</th><th>Region</th><th>Providers</th><th>Density signal</th></tr></thead>
+            <tbody id="densityCompTable"></tbody>
+          </table>
+          <div class="source">Comparison shows just how concentrated the largest UK markets are. London sub-areas split across 7 zones.</div>
+        </div>
+
+        <div class="callout warning">
+          <span class="icon">⚠️</span>
+          <div>
+            <strong>What this data is and isn't.</strong> Provider counts come from a public aggregator directory, not from Align Technology directly. Counts include all clinics offering Invisalign regardless of provider tier or case volume. A "Diamond" tier provider doing 500+ cases/year and a clinic doing 5 cases/year count equally. For true competitive intensity, layer in MiSmile Network membership (Treeline has it) and Invisalign provider tier (request from Align via the partner programme).
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ KEYWORDS ============ -->
+      <div class="page" id="page-keywords">
+        <div class="page-header">
+          <div class="eyebrow">New · Section 4.5</div>
+          <h2>Search Demand &amp; Keyword Volumes</h2>
+          <p class="desc">UK Google search volumes for clear aligner intent. Verified figures from dominatedental.com industry guides plus growth trends from Dentistry magazine.</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card featured">
+            <div class="label">Invisalign UK search growth</div>
+            <div class="value">+45%</div>
+            <div class="delta">Year-on-year (2024 → 2025)</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">"Clear aligners" search</div>
+            <div class="value">+66%</div>
+            <div class="delta">2022 → 2024 cumulative</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Latest 12-month rise</div>
+            <div class="value">+23%</div>
+            <div class="delta up">Oct 2024 → Oct 2025</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">London + Manc + Birm</div>
+            <div class="value">60%</div>
+            <div class="delta">of all UK Invisalign queries</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>UK national keyword volumes (monthly)</h3>
+          <table class="tbl">
+            <thead><tr><th>Keyword</th><th>Monthly volume</th><th>Intent</th></tr></thead>
+            <tbody id="kwNational"></tbody>
+          </table>
+          <div class="source">Source: dominatedental.com SEO industry guides (free public content). Volumes are stated UK Google searches; exact methodology varies by source aggregator.</div>
+        </div>
+
+        <div class="callout success" style="border-left-width:5px;">
+          <span class="icon">✅</span>
+          <div>
+            <strong>Now with Google Keyword Planner data (pulled 19 May 2026).</strong> The estimates in the previous version of this report have been replaced with verified figures from Google's own search-volume tool. Data window: May 2025 – April 2026 (12-month average). The discoveries are sharper than the estimates predicted — see the brand-vs-generic premium below.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Treeline catchments — verified city-level demand</h3>
+          <table class="tbl">
+            <thead><tr><th>City</th><th>Key term</th><th>Monthly volume</th><th>Competitive density</th><th>Opportunity score</th></tr></thead>
+            <tbody id="kwLocal"></tbody>
+          </table>
+          <div class="source">Sources: Google Keyword Planner (Treeline pull, May 2026, location: targeting requires UK confirmation — account default was AUD). Nottingham brand-term volume (1,240) and Sheffield variants (2,400) retained from dominatedental.com industry data.</div>
+        </div>
+
+        <div class="card" style="background:#fff7ed; border-color:#fdba74;">
+          <h3 style="color:#9a3412;">🔥 The brand-vs-generic premium — biggest insight from GKP data</h3>
+          <table class="tbl">
+            <thead><tr><th>Term</th><th>Monthly volume</th><th>Source</th></tr></thead>
+            <tbody>
+              <tr><td><b>"Invisalign Nottingham"</b> (brand)</td><td><b>1,240</b></td><td>Industry (dominatedental)</td></tr>
+              <tr><td>"Clear aligners Nottingham" (generic)</td><td>50</td><td>Google Keyword Planner</td></tr>
+              <tr><td>"Clear braces Nottingham" (alternative)</td><td>50</td><td>Google Keyword Planner</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:12px;"><b>Nottingham brand-to-generic ratio: 25:1.</b> Patients overwhelmingly search the Invisalign brand name when they mean clear aligners. This single insight should drive 80% of Treeline's paid + SEO strategy: <b>capture local Invisalign queries, do not waste budget on generic "clear aligners" terms.</b></p>
+        </div>
+
+        <div class="card" style="background:#eef9f7; border-color:var(--teal);">
+          <h3 style="color:var(--success);">🎯 Hidden arbitrage — cheap-ad opportunity in Nottingham</h3>
+          <p>Google Keyword Planner shows these generic Nottingham terms have <b>very low ad competition</b>:</p>
+          <table class="tbl">
+            <thead><tr><th>Term</th><th>Competition</th><th>Index</th><th>CPC range (AUD)</th></tr></thead>
+            <tbody>
+              <tr><td>"Clear braces Nottingham"</td><td><b>Low</b></td><td>11</td><td>$5.34 – $14.12</td></tr>
+              <tr><td>"Clear aligners Nottingham"</td><td><b>Low</b></td><td>26</td><td>$2.17 – $12.50</td></tr>
+              <tr><td>"Invisalign Lincoln"</td><td>High</td><td>83</td><td>$6.12 – $24.23</td></tr>
+              <tr><td>"Clear aligners Lincoln"</td><td>High</td><td>90</td><td>$4.83 – $13.03</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:12px;">Despite Nottingham being a high-provider catchment (89 clinics), almost nobody is bidding on the generic terms there. Treeline could run cheap Google Ads on these as a long-tail capture play — low volume but minimal competition means each click costs less.</p>
+        </div>
+
+        <div class="callout warning">
+          <span class="icon">⚠️</span>
+          <div>
+            <strong>Things this verified data corrects.</strong> (1) The earlier industry-source claim of "Clear braces Nottingham = 890/mo" was inflated — Google's own data says <b>50</b>. dominatedental.com numbers should be treated as directional only. (2) The earlier "Sleaford 70/mo" estimate was too optimistic — Sleaford has no GKP data, meaning &lt;10/mo for generic terms. (3) "Invisalign Lincoln 500/mo" needs verification that location targeting was set to UK — the volume may include Lincoln, Nebraska traffic.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Brand vs. generic — strategic split</h3>
+          <table class="tbl">
+            <thead><tr><th>Term family</th><th>Approx monthly UK volume</th><th>Type</th><th>Treeline play</th></tr></thead>
+            <tbody>
+              <tr><td>"Invisalign" + variations</td><td>High (60% London/Manc/Birm)</td><td>Brand-led</td><td>Capture local Invisalign queries with city pages; use MiSmile credentialing</td></tr>
+              <tr><td>"Clear aligners" + variations</td><td>+66% growth, lower base</td><td>Generic, education</td><td>Educational content + comparison articles ("Invisalign vs clear aligners")</td></tr>
+              <tr><td>"[City] dentist"</td><td>Very high, local</td><td>Local intent</td><td>Local SEO foundation — aligner is one of several services surfaced</td></tr>
+              <tr><td>"Teeth straightening"</td><td>Moderate</td><td>Generic, lower intent</td><td>Top-of-funnel content; convert to aligner consultation</td></tr>
+              <tr><td>"Teen Invisalign"</td><td>Rising</td><td>Demographic-led</td><td>Parent-targeted, school-holiday campaign timing</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout warning">
+          <span class="icon">⚠️</span>
+          <div>
+            <strong>Caveat on free volume data.</strong> Google Keyword Planner is free with any Google Ads account (no spend required) but requires login. The volumes above are from third-party SEO industry content that aggregates multiple sources; they are directionally reliable but not authoritative. For campaign-grade precision, run a free 7-day SEMrush or Ahrefs trial — both give exact UK volumes for 100s of keywords in one pull.
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ REGULATION ============ -->
+      <div class="page" id="page-regulation">
+        <div class="page-header">
+          <div class="eyebrow">Section 3</div>
+          <h2>Regulatory &amp; Compliance Landscape</h2>
+          <p class="desc">GDC, BOS and CQC have all reinforced that aligner treatment is regulated clinical activity — even when delivered remotely. The SmileDirectClub collapse is now the standard cautionary reference.</p>
+        </div>
+
+        <div class="card">
+          <h3>GDC — direct-to-consumer aligners</h3>
+          <p>The General Dental Council's formal statement holds that:</p>
+          <ul style="padding-left:20px;">
+            <li>Clear aligner treatment falls within the legal definition of dentistry, regardless of how it is initiated (including patient-taken impressions or remote scans).</li>
+            <li>Treatment must be provided by a GDC-registered dental professional.</li>
+            <li><em>"There is no effective substitute for a physical, clinical examination as the foundation for that assessment."</em></li>
+          </ul>
+          <div class="source">gdc-uk.org / standards-guidance / direct-to-consumer-orthodontics</div>
+        </div>
+
+        <div class="card">
+          <h3>BOS teledentistry guidance (Feb 2022)</h3>
+          <ul style="padding-left:20px;">
+            <li>All diagnostic and prescriptive decisions must be made by a treating orthodontist/dentist.</li>
+            <li><em>"The direct involvement of an appropriately trained and registered orthodontist/dentist is essential for the monitoring of orthodontic care."</em></li>
+            <li>Patients on aligner treatment must have direct contact with the responsible clinician and be able to arrange face-to-face appointments when needed.</li>
+          </ul>
+          <div class="source">bos.org.uk — Guidance on teledentistry and remote interactions in orthodontic care</div>
+        </div>
+
+        <div class="card">
+          <h3>SmileDirectClub — the cautionary tale</h3>
+          <div class="callout warning">
+            <span class="icon">⚠️</span>
+            <div>
+              SmileDirectClub announced bankruptcy on <b>8 December 2023</b> and shut all global operations on <b>10 December 2023</b>. UK customers were left mid-treatment with no clinical handover and limited refund options (most relying on Section 75 credit-card protection). The event has reshaped UK consumer perception of remote-only aligner models and is now used directly by clinic-led providers as a trust-positioning argument.
+            </div>
+          </div>
+          <div class="source">Which? consumer reporting; Refinery29; multiple UK dental practice explainers.</div>
+        </div>
+
+        <div class="card">
+          <h3>CQC position</h3>
+          <p>The Care Quality Commission's "Dental mythbuster 39: Direct-to-consumer orthodontics" reinforces that remote-led aligner services are regulated activity. CQC inspection scope extends to any aligner-providing practice in England — Treeline's CQC registration is itself a marketable trust asset.</p>
+          <div class="source">cqc.org.uk/guidance-providers/dentists/dental-mythbuster-39-direct-consumer-orthodontics</div>
+        </div>
+      </div>
+
+      <!-- ============ TRUST ============ -->
+      <div class="page" id="page-trust">
+        <div class="page-header">
+          <div class="eyebrow">Section 6</div>
+          <h2>Trust &amp; Complaint Landscape</h2>
+          <p class="desc">Seven recurring complaint themes across UK aligner brands. Almost all of them are structurally <em>worse</em> for remote-heavy and consumer-chain models than for established clinic-led practices.</p>
+        </div>
+
+        <div class="card">
+          <h3>Top recurring complaint themes</h3>
+          <div class="theme-list" id="themeList"></div>
+          <div class="source">Synthesised from Trustpilot (Invisalign UK 127 reviews; Impress ~8,950 reviews), UK dental press, and consumer-protection coverage.</div>
+        </div>
+
+        <div class="card">
+          <h3>What this means for clinic-led positioning</h3>
+          <div class="callout success">
+            <span class="icon">✓</span>
+            <div>
+              Every complaint theme above can be answered by a single clinic-led message: <em>"We are GDC-registered, you see the same dentist throughout, we hold your records, and there is a person you can phone if anything goes wrong."</em> This is the highest-leverage trust message available in the category — and it is currently under-used.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ COMPETITIVE ============ -->
+      <div class="page" id="page-competitive">
+        <div class="page-header">
+          <div class="eyebrow">Section 7</div>
+          <h2>East Midlands Competitive Picture</h2>
+          <p class="desc">Treeline operates across four East Midlands locations. This is the visible competitive set at the time of writing.</p>
+        </div>
+
+        <div class="card">
+          <h3>Direct local competitors offering Invisalign</h3>
+          <div id="compList"></div>
+        </div>
+
+        <div class="card">
+          <h3>National chains with East Midlands reach</h3>
+          <div class="comp-card">
+            <div class="name"><b>Impress</b></div>
+            <div class="small">Sheffield (nearest)</div>
+            <div class="small">Invisalign delivery</div>
+            <div class="small">No Lincoln / Nottingham / Sleaford clinic — Treeline currently has a "we are here, they are not" advantage. Will erode if Impress opens in Nottingham or Leeds.</div>
+          </div>
+          <div class="comp-card">
+            <div class="name"><b>Bupa, mydentist, etc.</b></div>
+            <div class="small">Multi-site</div>
+            <div class="small">Invisalign (rarely led)</div>
+            <div class="small">Latent competitors — most offer Invisalign but rarely lead with aligner marketing.</div>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <div class="card" style="margin-bottom:0;">
+            <h3 style="color:var(--success);">Structural advantages</h3>
+            <ul style="padding-left:20px;">
+              <li>Multi-site reach across Lincoln, Nottingham, Sheffield, Sleaford</li>
+              <li>MiSmile Network membership — UK's largest Invisalign network</li>
+              <li>NHS + private model — softer entry than pure-private cosmetic chains</li>
+              <li>Whole-mouth care positioning — aligners as a gateway, not isolated</li>
+            </ul>
+          </div>
+          <div class="card" style="margin-bottom:0;">
+            <h3 style="color:var(--warning);">Structural gaps to close</h3>
+            <ul style="padding-left:20px;">
+              <li>No public "compare aligner systems" content for patients arriving via Invisalign search</li>
+              <li>Limited price transparency vs. Impress's published tiering</li>
+              <li>No structured complaint / aftercare pathway content publicly visible</li>
+              <li>City-modified landing pages under-built (Invisalign Lincoln, Invisalign Nottingham, etc.)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ OPPORTUNITIES ============ -->
+      <div class="page" id="page-opportunities">
+        <div class="page-header">
+          <div class="eyebrow">Section 8</div>
+          <h2>Opportunity Matrix</h2>
+          <p class="desc">Six prioritised growth plays — filter by effort or time-to-impact.</p>
+        </div>
+
+        <div class="filter-bar">
+          <span class="label">Filter by effort:</span>
+          <div class="chip active" data-filter="effort" data-value="all">All</div>
+          <div class="chip" data-filter="effort" data-value="Low">Low</div>
+          <div class="chip" data-filter="effort" data-value="Medium">Medium</div>
+        </div>
+        <div class="filter-bar">
+          <span class="label">Filter by time-to-impact:</span>
+          <div class="chip active" data-filter="time" data-value="all">All</div>
+          <div class="chip" data-filter="time" data-value="fast">Immediate / &lt;3 months</div>
+          <div class="chip" data-filter="time" data-value="med">3–6 months</div>
+          <div class="chip" data-filter="time" data-value="slow">6+ months</div>
+        </div>
+
+        <div id="oppList"></div>
+      </div>
+
+      <!-- ============ INTELLIGENCE ============ -->
+      <div class="page" id="page-intelligence">
+        <div class="page-header">
+          <div class="eyebrow">Section 9</div>
+          <h2>Ongoing Intelligence System</h2>
+          <p class="desc">A free-tool monitoring cadence. Total cost: time only — no SEMrush, no Ahrefs.</p>
+        </div>
+
+        <div class="cadence-grid">
+          <div class="cadence monthly">
+            <span class="freq">Monthly</span>
+            <h4>Pulse check (~2 hours)</h4>
+            <ul>
+              <li>UK Invisalign search trajectory — Google Trends</li>
+              <li>Impress active ads — Meta Ad Library</li>
+              <li>Invisalign paid ads — Google Ads Transparency</li>
+              <li>Top-ranking page per city — manual SERP check</li>
+              <li>Local clinic price changes — site visits</li>
+            </ul>
+            <div class="time">All free · all browser-based</div>
+          </div>
+          <div class="cadence quarterly">
+            <span class="freq">Quarterly</span>
+            <h4>Deep scan (~1 day)</h4>
+            <ul>
+              <li>Trustpilot sentiment — Impress, Invisalign UK, top 3 locals</li>
+              <li>GDC published hearings — aligner-related rulings</li>
+              <li>BOS press releases &amp; updated guidance</li>
+              <li>CQC inspection reports — new local entrants</li>
+              <li>Angel Aligner quarterly results &amp; UK adoption signals</li>
+              <li>Align Technology earnings — UK commentary</li>
+            </ul>
+            <div class="time">All free · published sources</div>
+          </div>
+          <div class="cadence annual">
+            <span class="freq">Annual</span>
+            <h4>Strategic refresh (~2 days)</h4>
+            <ul>
+              <li>Refreshed UK market sizing — publisher abstracts</li>
+              <li>Updated UK provider density — locator sampling</li>
+              <li>Competitor full-year financials — Companies House</li>
+              <li>BOS annual workforce / demand survey</li>
+            </ul>
+            <div class="time">All free · 2× sources are official UK govt</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Suggested intelligence dashboard structure</h3>
+          <p>A simple Google Sheet, six tabs:</p>
+          <ol style="padding-left:22px;">
+            <li><b>Market snapshot</b> — latest UK size, CAGR, age-segment split, source date</li>
+            <li><b>Brand tracker</b> — one row per brand × pricing, finance, positioning quote, Trustpilot score &amp; count, last verified date</li>
+            <li><b>Local SERP</b> — per-city × top 5 competitors, last 4 quarters</li>
+            <li><b>Trust signals</b> — Trustpilot deltas, GDC cases, CQC notes</li>
+            <li><b>Demand trends</b> — Google Trends screenshots, monthly</li>
+            <li><b>Opportunity scorecard</b> — the six opportunities from §8, scored monthly for progress</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ============ SOURCES ============ -->
+      <div class="page" id="page-sources">
+        <div class="page-header">
+          <div class="eyebrow">Section 10</div>
+          <h2>Sources &amp; Methodology</h2>
+          <p class="desc">Every figure in this report has a verifiable public source. None is invented.</p>
+        </div>
+
+        <div class="card">
+          <h3>Method</h3>
+          <p>All data accessed via web search and direct site fetch on 19 May 2026. No paid SEO platforms (SEMrush, Ahrefs, SimilarWeb), no private databases. Where a figure originates from a paid market-research report, only the publisher's free abstract was used.</p>
+        </div>
+
+        <div class="card">
+          <h3>Verified sources</h3>
+          <table class="tbl">
+            <thead><tr><th>Category</th><th>Source</th></tr></thead>
+            <tbody>
+              <tr><td>UK market sizing</td><td>Grand View Research — UK Clear Aligners Market Outlook</td></tr>
+              <tr><td>Global market context</td><td>Mordor Intelligence, Fortune Business Insights, GMInsights</td></tr>
+              <tr><td>Brand financial momentum</td><td>Align Technology Q1 / Q3 2025; Angelalign 2024 results</td></tr>
+              <tr><td>UK demand survey</td><td>BOS "Zoom Boom" — bos.org.uk</td></tr>
+              <tr><td>Teledentistry guidance</td><td>BOS Feb 2022 guidance document</td></tr>
+              <tr><td>D2C orthodontics regulation</td><td>gdc-uk.org standards page; CQC Mythbuster 39</td></tr>
+              <tr><td>SmileDirectClub closure</td><td>Which? · Refinery29 · UK dental press</td></tr>
+              <tr><td>Trustpilot data</td><td>uk.trustpilot.com — Invisalign UK, smile2impress.com</td></tr>
+              <tr><td>Impress pricing</td><td>smile2impress.com/uk/prices</td></tr>
+              <tr><td>Brand UK sites</td><td>invisalign.co.uk, ormco.uk/spark, straumann.com/clearcorrect/gb, angelaligner.com/en-gb, smile2impress.com/uk</td></tr>
+              <tr><td>Local competitor data</td><td>em-orthodontics.co.uk, dental-suite.co.uk, campbell-clinic.co.uk</td></tr>
+              <tr><td>MiSmile Network</td><td>mismile.co.uk</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3>What this report deliberately did not do</h3>
+          <ul style="padding-left:20px;">
+            <li>Did not purchase or quote from paid market research reports beyond free abstracts.</li>
+            <li>Did not scrape doctor-locator postcode density — a longer one-off engineering pass; recommended as the next intelligence build.</li>
+            <li>Did not include absolute keyword volumes — Google Keyword Planner requires an active Google Ads account; Trends only shows relative interest.</li>
+            <li>Did not include statistically-significant Reddit theme quantification — included only qualitatively.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<!-- ============ DRAWER ============ -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <button class="close" id="drawerClose">×</button>
+    <div class="eyebrow" id="drawerEyebrow">Brand Profile</div>
+    <h2 id="drawerTitle">—</h2>
+    <div class="sub" id="drawerSub">—</div>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

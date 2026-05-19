@@ -2,15 +2,60 @@
 
 Interactive click-through prototype of a UK clear aligner market intelligence report, prepared for Treeline Dental Care (Lincoln, Nottingham, Sheffield, Sleaford).
 
-## What's in this repo
+## Files
 
-- **`UK-Aligners-Report-Prototype.html`** — a single self-contained HTML file. Sidebar navigation across 11 sections, clickable brand profiles with drawer details, a live Chart.js market-size chart, filterable opportunity matrix, and a provider-density bar chart. No build step, no dependencies beyond the Chart.js CDN.
+```
+index.html      — page structure and content
+styles.css      — all styling (16 KB)
+app.js          — interactive logic, data, Chart.js renderers (27 KB)
+netlify.toml    — Netlify deploy config
+README.md       — this file
+```
 
-## How to view it
+External dependency: Chart.js 4.4.0 from jsDelivr CDN (loaded in `<head>`).
 
-Open `UK-Aligners-Report-Prototype.html` in any modern browser (Chrome, Safari, Edge, Firefox). No server, no install. Double-click works.
+## How to view locally
 
-## What's covered
+Open `index.html` in any modern browser. For local development with the multi-file structure, serve from a simple HTTP server so the relative CSS/JS paths resolve:
+
+```bash
+# Python 3
+python3 -m http.server 8000
+
+# Or Node
+npx serve .
+```
+
+Then visit http://localhost:8000.
+
+## Deploy to Netlify
+
+### Option 1 — Connect this repo (recommended)
+
+1. Sign in to [app.netlify.com](https://app.netlify.com)
+2. **Add new site → Import an existing project → GitHub**
+3. Select `renju997/uk-aligners-report`
+4. Build settings: Netlify will auto-detect from `netlify.toml`. No build command needed; publish directory is `.` (root).
+5. **Deploy site**
+
+Netlify auto-deploys on every push to `main`. The first deploy gives you a random URL like `https://xyz-abc-123.netlify.app`; you can change it under **Site settings → Change site name** or **Domain management → Add custom domain**.
+
+### Option 2 — Drag-and-drop
+
+1. Download or `git clone` this repo
+2. Drag the project folder onto [app.netlify.com/drop](https://app.netlify.com/drop)
+3. Done
+
+### Option 3 — Netlify CLI
+
+```bash
+npm install -g netlify-cli
+netlify login
+netlify init      # link to a new or existing site
+netlify deploy --prod
+```
+
+## What's covered in the prototype
 
 1. **Dashboard** — at-a-glance market view + jump-to-section cards
 2. **Market Sizing** — $367.7m UK 2025 → $2.33bn 2033 forecast (Grand View Research) + Chart.js growth chart
@@ -28,13 +73,13 @@ Open `UK-Aligners-Report-Prototype.html` in any modern browser (Chrome, Safari, 
 
 All data is from free public sources. No paid SEO platforms.
 
-- Market sizing: Grand View Research, Mordor Intelligence, Fortune Business Insights
-- Demand: British Orthodontic Society, BDJ
-- Regulatory: GDC, BOS, CQC
-- Trust: Trustpilot (Invisalign UK, smile2impress)
-- Provider density: alignerlocal.co.uk public Invisalign directory
-- Keyword volumes (primary): Google Keyword Planner direct pull, May 2026
-- Keyword volumes (industry): dominatedental.com SEO guides
+- **Market sizing:** Grand View Research, Mordor Intelligence, Fortune Business Insights
+- **Demand:** British Orthodontic Society, BDJ
+- **Regulatory:** GDC, BOS, CQC
+- **Trust:** Trustpilot (Invisalign UK, smile2impress)
+- **Provider density:** alignerlocal.co.uk public Invisalign directory
+- **Keyword volumes (primary):** Google Keyword Planner direct pull, May 2026
+- **Keyword volumes (industry):** dominatedental.com SEO guides
 
 ## Caveats
 
