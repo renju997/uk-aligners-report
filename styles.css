@@ -16,6 +16,32 @@ body {
 a { color:var(--navy-2); text-decoration:none; }
 a:hover { text-decoration:underline; }
 
+/* Sources page: links should be visibly clickable by default */
+#page-sources a {
+  text-decoration: underline;
+  text-decoration-color: rgba(26,90,143,.4);
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: all .15s;
+  word-break: break-word;
+}
+#page-sources a:hover {
+  color: var(--navy);
+  text-decoration-color: var(--navy);
+  text-decoration-thickness: 2px;
+}
+#page-sources h4 {
+  color: var(--navy);
+  font-size: 12.5px;
+  margin: 20px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+#page-sources h4:first-of-type { margin-top: 0; }
+#page-sources ul li { margin-bottom: 7px; font-size: 13px; line-height: 1.55; }
+
 /* ============ LAYOUT ============ */
 .app { display:grid; grid-template-columns:260px 1fr; height:100vh; }
 
